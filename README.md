@@ -8,3 +8,5 @@ download git
 menghubungkan ke github 
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b044638f-d22c-4e34-9e8e-23aa90492cde" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5c1b7313-471d-457b-936a-3b5fc4f0ba07" />
