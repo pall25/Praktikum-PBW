@@ -1,1 +1,49 @@
+(about)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - LaraPress</title>
+</head>
+<body>
+ <h1>Tentang LaraPress</h1>
+    <p>LaraPress adalah sebuah proyek blog sederhana yang dibuat untuk mempelajari dasar-dasar framework Laravel 12.</p>   
+    <a href="/">Kembali ke Halaman Utama</a>
+    <a href="/kontak">hubungi Kami</a>
+</body>
+</html>
 
+(web.php)
+<?php
+
+use Illuminate\Support\Facades\Route;
+use Laravel\Fortify\Features;
+use Livewire\Volt\Volt;
+
+Route::get('/', function () {
+    return view('welcome');
+})->name('welcome');
+
+Route::get('/tentang-kami', function () {
+    return view('about'); // Kita akan menampilkan view bernama 'about'
+});
+Route::get('/kontak', function () {
+    return view('kontak');
+});
+
+(welcomme)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang LaraPress</title>
+</head>
+<body>
+   <h1>Selamat Datang di Blog LaraPress</h1>
+    <p>Ini adalah halaman utama dari aplikasi blog kita.</p>
+<a href="/tentang-kami">Lihat Halaman Tentang Kami</a>
+<a href="/kontak">Lihat hubungi Kami</a>
+</body>
+</html>
